@@ -1,5 +1,7 @@
 package Lesson1;
 
+import java.util.List;
+
 public class Main {
 
     public static int globalint;
@@ -20,25 +22,26 @@ public class Main {
     public static Short globalshoartWR;
     public static Boolean globalbooleanWR;
 
-public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
 
-    byte localbyte=10;
-    char localchar='j';
-    double localdouble=2.31;
-    float localfloat=5F;
-    //long locallong=45L;          not used
-    //short localshort=76;         not used
-    //int localint=756855;         not used
-    //boolean localboolean=true;   not used
+        byte localbyte=10;
+        char  localchar='j';
+        double localdouble=2.31;
+        float localfloat=5F;
+        //long locallong=45L;          not used
+        //short localshort=76;         not used
+        //int localint=756855;         not used
+        //boolean localboolean=true;   not used
 
-    //Byte localbyteWR=10;        not used
-   // Character localcharWR='y';   not used
-   // Double localdoubleWR=2.31;  not used
-    Float localfloaWRt= 5F;
-    Long locallongWR = 5L;    
-    Short localshortWR=76;   
-    Integer localintWR=756855;
-    Boolean localbooleanWR=true;
+        //Byte localbyteWR=10;        not used
+        // Character localcharWR='y';   not used
+        // Double localdoubleWR=2.31;  not used
+        Float localfloaWRt= 5F;
+        Long locallongWR = 5L;    
+        Short localshortWR=76;   
+        Integer localintWR=756855;
+        Boolean localbooleanWR=true;
+        
     
         DataHolder holder = new DataHolder();
         holder.setIntValue(90);
@@ -64,7 +67,7 @@ public static void main(String[] args) throws Exception {
         globallongWR = holder.getLongValue();
   
         byte byte1 = holder.getByteValue();
-        int int2=holder.getIntValue();
+        int int2 = holder.getIntValue();
         double double2=holder.getDoubleD();
         
         byte b = 10;
@@ -84,31 +87,33 @@ public static void main(String[] args) throws Exception {
        // Integer nullable = null;
        // int x = nullable;         // ❌ NullPointerException во время выполнения
 
-System.out.println("Global Variables:");       
-System.out.println("Global Int: " + globalint);
-System.out.println("Global Double: " + globaldouble);
-System.out.println("Global Boolean Wrapper class: " + globalbooleanWR);
-System.out.println("Global Short: " + holder.geShortS());
-System.out.println("Global Float: " + holder.getFloatValue());
-System.out.println("Global Long Wrapper class: " + globallongWR); 
+       System.out.println(holder);
 
-System.out.println("Local Variables:");   
-System.out.println("Local Byte variable from Main: " + byte1);
-System.out.println("Local Int variable from Main: " + int2);
-System.out.println("Local Double variable from Main: " + double2);
-System.out.println("Local Float variable from Main: " + localfloat);
+        System.out.println("Global Variables:");       
+        System.out.println("Global Int: " + globalint);
+        System.out.println("Global Double: " + globaldouble);
+        System.out.println("Global Boolean Wrapper class: " + globalbooleanWR);
+        System.out.println("Global Short: " + holder.geShortS());
+        System.out.println("Global Float: " + holder.getFloatValue());
+        System.out.println("Global Long Wrapper class: " + globallongWR); 
 
-System.out.println("Experiments with types:");   
-System.out.println("Byte to Int: " + i);
-System.out.println("Int to Long: " +l);
-System.out.println("Long to Double: " + d);
+        System.out.println("Local Variables:");   
+        System.out.println("Local Byte variable from Main: " + byte1);
+        System.out.println("Local Int variable from Main: " + int2);
+        System.out.println("Local Double variable from Main: " + double2);
+        System.out.println("Local Float variable from Main: " + localfloat);
 
-System.out.println("Double to Int: " + i2);
-System.out.println("Overfull: " +small);
+        System.out.println("Experiments with types:");   
+        System.out.println("Byte to Int: " + i);
+        System.out.println("Int to Long: " +l);
+        System.out.println("Long to Double: " + d);
 
-System.out.println("Integer to int: " +unboxed);
+        System.out.println("Double to Int: " + i2);
+        System.out.println("Overfull: " +small);
 
-//System.out.println("Null: " +x);
+        System.out.println("Integer to int: " +unboxed);
+
+        //System.out.println("Null: " +x);
 
 
 
