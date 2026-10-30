@@ -1,11 +1,11 @@
 package Lesson7;
 
 
-public interface RobotPartFactory {
+public interface RobotPartFactory<T>{
     Robot.Head addHead(int h);
     Robot.Body addBody(int b);
 }
-    class BodyFactoryImpl implements RobotPartFactory {
+    class BodyFactoryImpl implements RobotPartFactory<Robot.Body> {
         @Override 
         public Robot.Body addBody(int b){
             Enum.BodyMaterial bodyMaterial = Enum.BodyMaterial.values()[b];
@@ -20,7 +20,7 @@ public interface RobotPartFactory {
         
     }
 
-    class HeadFactoryImpl implements RobotPartFactory {
+    class HeadFactoryImpl implements RobotPartFactory<Robot.Head> {
         @Override 
         public Robot.Head addHead(int h){
             Enum.HeadName headName = Enum.HeadName.values()[h];
