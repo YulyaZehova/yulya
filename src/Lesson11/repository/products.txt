@@ -1,0 +1,10 @@
+1;Soft toy bear;15.11.2026
+2;Soft toy dog;15.11.2026
+3;Soft toy cat;15.11.2026
+4;Soft toy panda;15.11.2026
+5;Soft toy tiger;15.11.2026
+6;Soft toy hare;15.11.2026
+7;Soft toy elephant;15.11.2026
+8;Soft toy fox;15.11.2026
+9;Soft toy koala;15.11.2026
+10;Soft toy wolf;18.11.2026
