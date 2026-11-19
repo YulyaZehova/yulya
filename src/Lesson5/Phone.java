@@ -4,32 +4,32 @@ public class Phone {
     private String number;
     private String model;
     private int weight;
-    
-    public Phone(String number, String model, int weight){
+
+    public Phone(String number, String model, int weight) {
         this(number, model);
         this.weight = weight;
     }
 
-    public Phone(String number, String model){
+    public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
 
-    public Phone(){
+    public Phone() {
         System.out.println("Parameterless Constructor");
     }
 
-    public void receiveCall(String name){
+    public void receiveCall(String name) {
         System.out.println("Calling {" + name + "}");
     }
 
-    public void receiveCall(String name, String numberCall){
+    public void receiveCall(String name, String numberCall) {
         System.out.println("Calling {" + name + "}" + " Number = " + numberCall);
     }
 
-    public void sendMessage(String... numbers){
-        for (String numbeString : numbers) {
-            System.out.println(numbeString);
+    public void sendMessage(String... numbers) {
+        for (String number : numbers) {
+            System.out.println(number);
         }
     }
 
@@ -56,6 +56,5 @@ public class Phone {
     public void setWeight(int weight) {
         this.weight = weight;
     }
-    
-    
+
 }
